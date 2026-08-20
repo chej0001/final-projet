@@ -1,6 +1,6 @@
- /* ==============================
+/* =========================================
    CSS RESET
-   ============================== */
+   ========================================= */
 
 * {
     box-sizing: border-box;
@@ -22,28 +22,21 @@ body {
 img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
     list-style: none;
 }
 
-button,
-input,
-textarea {
-    font: inherit;
-}
 
-
-/* ==============================
+/* =========================================
    GENERAL CONTAINER
-   ============================== */
+   ========================================= */
 
 .container {
     width: 90%;
@@ -52,9 +45,9 @@ textarea {
 }
 
 
-/* ==============================
-   HEADER / NAVIGATION
-   ============================== */
+/* =========================================
+   HEADER
+   ========================================= */
 
 header {
     background-color: #222;
@@ -65,46 +58,46 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
-    gap: 1rem;
 }
 
 .logo {
+    display: block;
     background-color: #c78c06;
-    color: white;
-    padding: 0.7rem 1rem;
+    color: #222;
     font-size: 1.5rem;
     font-weight: 700;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
+    padding: 0.8rem 1rem;
     width: 100%;
     text-align: center;
 }
 
-nav li {
-    border-bottom: 1px solid #555;
+.navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-nav a {
+.navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation a {
     display: block;
     padding: 0.8rem;
     color: white;
-    transition: background-color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
+.navigation a:hover,
+.navigation a.active {
     background-color: #c78c06;
-    color: white;
+    color: #222;
 }
 
 
-/* ==============================
-   MAIN HEADINGS
-   ============================== */
+/* =========================================
+   HEADINGS
+   ========================================= */
 
 h1,
 h2,
@@ -117,7 +110,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin-bottom: 1rem;
 }
 
@@ -127,31 +120,27 @@ h3 {
 }
 
 
-/* ==============================
+/* =========================================
    BUTTONS
-   ============================== */
+   ========================================= */
 
-.button,
-.btn {
+.button {
     display: inline-block;
     background-color: #c78c06;
     color: #222;
     padding: 0.8rem 1.2rem;
     margin-top: 1rem;
-    border: none;
     font-weight: 700;
-    cursor: pointer;
 }
 
-.button:hover,
-.btn:hover {
+.button:hover {
     background-color: #ffe6ac;
 }
 
 
-/* ==============================
-   HOME / HERO SECTION
-   ============================== */
+/* =========================================
+   HERO
+   ========================================= */
 
 .hero {
     background-color: #222;
@@ -159,68 +148,63 @@ h3 {
     padding: 2rem 0;
 }
 
-.hero .container {
+.hero-container {
     display: flex;
     flex-direction: column;
 }
 
-.hero-image {
+.hero-container img {
     width: 100%;
 }
 
-.hero-content {
-    background-color: rgba(34, 34, 34, 0.9);
-    padding: 1.5rem;
+.hero-text {
+    background-color: #222;
+    padding: 1.5rem 0;
 }
 
-.hero-content h1 {
+.hero-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.hero-content p {
+.hero-text p {
     margin-bottom: 1rem;
 }
 
 
-/* ==============================
-   ABOUT SECTION
-   ============================== */
+/* =========================================
+   ABOUT
+   ========================================= */
 
 .about {
     background-color: #ffe6ac;
     padding: 2rem 0;
 }
 
-.about .container {
+.about-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
-.about-image {
+.about-container img {
     width: 100%;
 }
 
-.about-content {
-    padding: 1rem;
+.about-text {
+    padding-top: 1.5rem;
 }
 
-.about-content h2 {
-    font-size: 2rem;
+.about-text p {
+    margin-bottom: 1rem;
 }
 
 
-/* ==============================
-   SERVICES PAGE
-   ============================== */
+/* =========================================
+   SERVICES
+   ========================================= */
 
 .services {
     padding: 2rem 0;
-}
-
-.services-title {
-    margin-bottom: 1.5rem;
 }
 
 .services-grid {
@@ -242,37 +226,13 @@ h3 {
 }
 
 .service-content p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 
-/* ==============================
-   FEATURED SERVICES
-   ============================== */
-
-.featured-services {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.featured-card {
-    background-color: #ffe6ac;
-}
-
-.featured-card img {
-    width: 100%;
-}
-
-.featured-content {
-    padding: 1.2rem;
-}
-
-
-/* ==============================
-   TEAM PAGE
-   ============================== */
+/* =========================================
+   TEAM
+   ========================================= */
 
 .team {
     padding: 2rem 0;
@@ -283,10 +243,6 @@ h3 {
     color: white;
     padding: 2rem;
     margin-bottom: 2rem;
-}
-
-.vision h2 {
-    color: white;
 }
 
 .team-grid {
@@ -307,19 +263,15 @@ h3 {
     padding: 1.2rem;
 }
 
-.team-member h3 {
-    font-size: 1.4rem;
-}
-
-.team-member .role {
+.role {
     font-weight: 700;
     margin-bottom: 0.7rem;
 }
 
 
-/* ==============================
-   CONTACT PAGE
-   ============================== */
+/* =========================================
+   CONTACT
+   ========================================= */
 
 .contact {
     padding: 2rem 0;
@@ -331,10 +283,6 @@ h3 {
     gap: 2rem;
 }
 
-.contact-form {
-    width: 100%;
-}
-
 .contact-form label {
     display: block;
     margin-bottom: 0.3rem;
@@ -344,10 +292,9 @@ h3 {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    border: 1px solid #222;
     padding: 0.7rem;
+    border: 1px solid #222;
     margin-bottom: 1rem;
-    background-color: white;
 }
 
 .contact-form textarea {
@@ -356,9 +303,9 @@ h3 {
 }
 
 .contact-form button {
+    border: none;
     background-color: #222;
     color: white;
-    border: none;
     padding: 0.8rem 1.5rem;
     cursor: pointer;
 }
@@ -369,22 +316,18 @@ h3 {
 }
 
 
-/* ==============================
-   LOCATION / MAP
-   ============================== */
+/* =========================================
+   LOCATION
+   ========================================= */
 
 .location img {
     width: 100%;
 }
 
-.location h2 {
-    margin-bottom: 1rem;
-}
 
-
-/* ==============================
-   HOURS OF OPERATION
-   ============================== */
+/* =========================================
+   HOURS
+   ========================================= */
 
 .hours {
     margin-top: 2rem;
@@ -397,8 +340,8 @@ h3 {
 
 .hours th {
     background-color: #ffe6ac;
-    text-align: left;
     padding: 0.7rem;
+    text-align: left;
 }
 
 .hours td {
@@ -406,14 +349,10 @@ h3 {
     padding: 0.7rem;
 }
 
-.hours tr:nth-child(even) {
-    background-color: #f7f7f7;
-}
 
-
-/* ==============================
+/* =========================================
    FOOTER
-   ============================== */
+   ========================================= */
 
 footer {
     background-color: #222;
@@ -433,92 +372,107 @@ footer a {
 }
 
 
-/* ==============================
-   TABLET / DESKTOP
+/* =========================================
+   DESKTOP
    Minimum width: 760px
-   ============================== */
+   ========================================= */
 
 @media screen and (min-width: 760px) {
 
-    /* Navigation becomes horizontal */
+    /* Navigation */
     nav {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
     }
 
-    nav ul {
-        flex-direction: row;
+    .logo {
         width: auto;
     }
 
-    nav li {
-        border-bottom: none;
+    .navigation {
+        width: auto;
+        flex-direction: row;
     }
 
-    nav a {
-        padding: 0.7rem 1rem;
+    .navigation li {
+        width: auto;
+    }
+
+    .navigation a {
+        padding: 1rem;
     }
 
 
-    /* Hero layout */
-    .hero .container {
+    /* Hero */
+    .hero {
+        padding: 0;
+    }
+
+    .hero-container {
         position: relative;
+        display: block;
     }
 
-    .hero-image {
-        width: 100%;
+    .hero-container img {
+        min-height: 500px;
+        object-fit: cover;
     }
 
-    .hero-content {
+    .hero-text {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 70%;
+        width: 75%;
+        padding: 2rem;
+        background-color: rgba(34, 34, 34, 0.9);
     }
 
-    .hero-content h1 {
+    .hero-text h1 {
         font-size: 3.5rem;
     }
 
 
-    /* About uses Flexbox */
-    .about .container {
+    /* About - Flexbox */
+    .about-container {
         flex-direction: row;
         align-items: center;
+        gap: 2rem;
     }
 
-    .about-image,
-    .about-content {
+    .about-container img,
+    .about-text {
         width: 50%;
     }
 
-
-    /* Services use CSS Grid */
-    .featured-services {
-        grid-template-columns: repeat(2, 1fr);
+    .about-text {
+        padding-top: 0;
     }
 
+
+    /* Services - CSS Grid */
     .services-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .service-card:first-child {
+        grid-column: span 1;
+    }
 
-    /* Team uses CSS Grid */
+
+    /* Team - CSS Grid */
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
 
-    /* Contact uses CSS Grid */
+    /* Contact - CSS Grid */
     .contact-grid {
         grid-template-columns: 1fr 1fr;
-        align-items: start;
     }
 
 
-    /* Footer uses Flexbox */
+    /* Footer - Flexbox */
     footer .container {
         flex-direction: row;
         justify-content: space-between;
@@ -527,32 +481,32 @@ footer a {
 }
 
 
-/* ==============================
+/* =========================================
    LARGE DESKTOP
-   ============================== */
+   ========================================= */
 
 @media screen and (min-width: 1000px) {
 
-    .hero-content {
-        width: 60%;
-        padding: 2rem;
-    }
-
-    .hero-content h1 {
+    h1 {
         font-size: 4rem;
     }
 
     h2 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
     }
 
-    .about {
-        padding: 3rem 0;
+    .hero-text {
+        width: 70%;
     }
 
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .about,
     .services,
     .team,
     .contact {
         padding: 3rem 0;
     }
-}  
+}
