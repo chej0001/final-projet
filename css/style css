@@ -1,6 +1,6 @@
-/* =========================
+/* ================================
    CSS RESET
-========================= */
+================================ */
 
 * {
     box-sizing: border-box;
@@ -14,13 +14,13 @@ body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     color: #222;
-    background: white;
-    line-height: 1.6;
+    background-color: white;
+    line-height: 1.5;
 }
 
 img {
-    max-width: 100%;
     display: block;
+    width: 100%;
 }
 
 a {
@@ -35,9 +35,9 @@ p {
 }
 
 
-/* =========================
-   GENERAL
-========================= */
+/* ================================
+   GENERAL STYLES
+================================ */
 
 .container {
     width: 90%;
@@ -46,30 +46,30 @@ p {
 }
 
 section {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.2;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
-/* =========================
+/* ================================
    HEADER
-========================= */
+================================ */
 
 .site-header {
-    background: #222;
-    color: white;
+    background-color: #c78c06;
 }
 
 .header-content {
@@ -86,28 +86,29 @@ h3 {
 
 .navigation {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 .navigation li {
-    margin: 0.5rem 0;
+    margin-bottom: 0.7rem;
 }
 
 .navigation a {
     text-decoration: none;
-    color: white;
-    font-weight: 600;
+    color: #222;
+    font-weight: 700;
 }
 
 .navigation a:hover {
-    color: #c78c06;
+    color: white;
 }
 
 .search-form {
-    margin-top: 1rem;
     display: flex;
+    width: 100%;
+    margin-top: 0.5rem;
 }
 
 .search-form label {
@@ -116,32 +117,37 @@ h3 {
 }
 
 .search-form input {
-    padding: 0.5rem;
-    border: none;
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #222;
 }
 
 .search-form button {
-    background: #c78c06;
-    border: none;
-    padding: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #222;
+    background-color: white;
+    cursor: pointer;
 }
 
 
-/* =========================
+/* ================================
    HERO
-========================= */
+================================ */
 
 .hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
     background-image:
-        linear-gradient(rgba(34, 34, 34, 0.65), rgba(34, 34, 34, 0.65)),
+        linear-gradient(
+            rgba(34, 34, 34, 0.55),
+            rgba(34, 34, 34, 0.55)
+        ),
         url("../images/main-banner.jpg");
 
     background-size: cover;
     background-position: center;
-    min-height: 500px;
-
-    display: flex;
-    align-items: center;
 }
 
 .hero-content {
@@ -150,10 +156,10 @@ h3 {
 }
 
 .hero-text {
-    background: rgba(34, 34, 34, 0.85);
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: rgba(34, 34, 34, 0.85);
     color: white;
-    padding: 2rem;
-    max-width: 700px;
 }
 
 .hero-text h1 {
@@ -162,31 +168,35 @@ h3 {
 
 .button {
     display: inline-block;
-    background: #c78c06;
+    padding: 0.9rem 1.2rem;
+    background-color: #c78c06;
     color: #222;
     text-decoration: none;
-    padding: 0.8rem 1.2rem;
+    border: 0;
     font-weight: 700;
-    border: none;
     cursor: pointer;
 }
 
 .button:hover {
-    background: #ffe6ac;
+    background-color: #ffe6ac;
+}
+
+.button span {
+    margin-left: 0.5rem;
 }
 
 
-/* =========================
-   ABOUT
-========================= */
+/* ================================
+   ABOUT US
+================================ */
 
 .about {
-    background: white;
+    background-color: white;
 }
 
 .about-grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .about-image img {
@@ -194,16 +204,16 @@ h3 {
 }
 
 .about-text h2 {
-    color: #222;
+    margin-bottom: 1rem;
 }
 
 
-/* =========================
+/* ================================
    SERVICES
-========================= */
+================================ */
 
 .services {
-    background: #ffe6ac;
+    background-color: #ffe6ac;
 }
 
 .service-grid {
@@ -212,50 +222,52 @@ h3 {
 }
 
 .service-card {
-    background: white;
-}
-
-.service-card img {
-    width: 100%;
+    background-color: white;
 }
 
 .service-content {
-    padding: 1.5rem;
+    padding: 1.2rem;
+}
+
+.service-content h3 {
+    margin-bottom: 0.8rem;
 }
 
 .dark-button {
     display: block;
-    background: #222;
+    padding: 1rem;
+    background-color: #222;
     color: white;
     text-decoration: none;
-    padding: 1rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .dark-button:hover {
-    background: #c78c06;
+    background-color: #c78c06;
     color: #222;
 }
 
+.dark-button span {
+    margin-left: 0.5rem;
+}
 
-/* =========================
-   TEAM
-========================= */
+
+/* ================================
+   OUR TEAM
+================================ */
 
 .team {
-    background: white;
+    background-color: white;
 }
 
 .team-grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .team-member {
-    display: flex;
-    flex-direction: column;
-    background: #ffe6ac;
+    background-color: #ffe6ac;
 }
 
 .team-member img {
@@ -263,36 +275,46 @@ h3 {
 }
 
 .team-member div {
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .team-member h3 {
     margin-bottom: 0.2rem;
 }
 
+.team-member strong {
+    display: block;
+    margin-bottom: 0.8rem;
+}
 
-/* =========================
+
+/* ================================
    CONTACT
-========================= */
+================================ */
 
 .contact {
-    background: #ffe6ac;
+    background-color: #ffe6ac;
 }
 
 .contact-grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .contact-form,
 .location {
-    background: white;
-    padding: 1.5rem;
+    background-color: white;
+    padding: 1.2rem;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.3rem;
+    font-weight: 600;
 }
 
 .contact-form input,
@@ -301,6 +323,7 @@ h3 {
     padding: 0.7rem;
     margin-bottom: 1rem;
     border: 1px solid #222;
+    font-family: "Open Sans", sans-serif;
 }
 
 .contact-form textarea {
@@ -308,23 +331,44 @@ h3 {
     resize: vertical;
 }
 
+.contact-form .button {
+    align-self: flex-start;
+}
+
+.location table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.location th,
+.location td {
+    padding: 0.6rem;
+    border: 1px solid #222;
+    text-align: left;
+}
+
+.location th {
+    background-color: #c78c06;
+}
+
 .map {
-    height: 250px;
-    background: #ddd;
+    min-height: 250px;
+    background-color: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-/* =========================
+/* ================================
    FOOTER
-========================= */
+================================ */
 
 footer {
-    background: #222;
-    color: white;
     padding: 2rem 0;
+    background-color: #222;
+    color: white;
 }
 
 .footer-content {
@@ -336,10 +380,10 @@ footer {
 }
 
 
-/* =========================
+/* ================================
    TABLET / DESKTOP
-   760px AND ABOVE
-========================= */
+   760PX AND ABOVE
+================================ */
 
 @media screen and (min-width: 760px) {
 
@@ -348,21 +392,22 @@ footer {
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
-
 
     /* Header becomes horizontal */
     .header-content {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .logo img {
+        width: 100px;
         margin-bottom: 0;
     }
 
@@ -372,26 +417,28 @@ footer {
     }
 
     .navigation li {
-        margin: 0;
+        margin-bottom: 0;
     }
 
     .search-form {
+        width: auto;
         margin-top: 0;
     }
 
+    .search-form input {
+        width: 150px;
+    }
 
-    /* About uses CSS Grid */
+    /* About section uses CSS Grid */
     .about-grid {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
 
-
     /* Services use CSS Grid */
     .service-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 
     /* Team uses CSS Grid */
     .team-grid {
@@ -403,13 +450,12 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-
     /* Contact uses CSS Grid */
     .contact-grid {
         grid-template-columns: 1fr 1fr;
     }
 
-
+    /* Footer uses Flexbox */
     .footer-content {
         display: flex;
         justify-content: space-between;
@@ -418,21 +464,22 @@ footer {
 }
 
 
-/* =========================
+/* ================================
    LARGE DESKTOP
-========================= */
+================================ */
 
 @media screen and (min-width: 1000px) {
-
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .hero {
         min-height: 600px;
     }
 
     .hero-text {
+        max-width: 700px;
         padding: 3rem;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
