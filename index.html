@@ -1,6 +1,5 @@
  <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +9,25 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS stylesheet -->
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
 
-        <div class="container">
+        <div class="container header-inner">
 
-            <nav>
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="Three Star Media">
+            </a>
 
-                <a href="#home" class="logo">
-                    Three Star Media
-                </a>
-
-                <ul class="navigation">
-
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
                     <li>
                         <a href="#home" class="active">Home</a>
                     </li>
@@ -53,10 +47,14 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
-
                 </ul>
-
             </nav>
+
+            <form class="search-form" action="#" method="get">
+                <label for="search">Search</label>
+                <input type="search" id="search" name="search">
+                <button type="submit" aria-label="Search">⌕</button>
+            </form>
 
         </div>
 
@@ -65,30 +63,29 @@
 
     <main>
 
-        <!-- Hero -->
+        <!-- ================= HERO ================= -->
         <section id="home" class="hero">
 
             <div class="container hero-container">
 
                 <img
+                    class="hero-image"
                     src="images/main-banner.jpg"
-                    alt="Three Star Media"
+                    alt="Three Star Media workspace"
                 >
 
-                <div class="hero-text">
+                <div class="hero-overlay">
 
-                    <h1>
-                        Welcome to Three Star Media
-                    </h1>
+                    <h1>Welcome to Three Star Media</h1>
 
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni rerum voluptas nesciunt quam nostrum similique,
-                        nihil laboriosam provident neque.
+                        Magni rerum voluptas nesciunt quam nostrum similique.
                     </p>
 
                     <a href="#contact" class="button">
                         Connect with us
+                        <span>▶</span>
                     </a>
 
                 </div>
@@ -98,33 +95,38 @@
         </section>
 
 
-        <!-- About Us -->
+        <!-- ================= ABOUT ================= -->
         <section id="about" class="about">
 
-            <div class="container about-container">
+            <div class="container about-grid">
 
-                <img
-                    src="images/about-us.jpg"
-                    alt="About Three Star Media"
-                >
+                <div class="about-image">
+                    <img
+                        src="images/about-us.jpg"
+                        alt="About Three Star Media"
+                    >
+                </div>
 
-                <div class="about-text">
+                <div class="about-content">
 
-                    <h2>
-                        About Us
-                    </h2>
+                    <h2>About Us</h2>
 
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde repellendus exercitationem asperiores
-                        quibusdam placeat maxime soluta laboriosam reprehenderit
-                        nemo necessitatibus.
+                        Libero unde repellendus exercitationem asperiores corporis
+                        ducimus. Maxime soluta temporibus exercitationem sapiente
+                        reprehenderit.
                     </p>
 
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquam accusamus consectetur suscipit deleniti soluta
-                        aut commodi quidem non perferendis.
+                        Possimus reprehenderit quam saepe praesentium laboriosam
+                        perferendis amet.
+                    </p>
+
+                    <p>
+                        Atque accusamus consectetur sunt eligendi soluta ut
+                        consequatur quidem non perferendis.
                     </p>
 
                 </div>
@@ -134,40 +136,37 @@
         </section>
 
 
-        <!-- Services -->
+        <!-- ================= SERVICES ================= -->
         <section id="services" class="services">
 
             <div class="container">
 
-                <h2>
-                    Our Services
-                </h2>
+                <h2>Our Services</h2>
 
-                <div class="services-grid">
 
+                <!-- Large services -->
+                <div class="featured-services">
 
                     <!-- Digital Transformation -->
-                    <article class="service-card">
+                    <article class="featured-service">
 
                         <img
-                            src="images/digital-transformation.jpg"
+                            src="images/digital.jpg"
                             alt="Digital Transformation"
                         >
 
                         <div class="service-content">
 
-                            <h3>
-                                Digital Transformation
-                            </h3>
+                            <h3>Digital Transformation</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Eius veritatis temporibus
-                                maiores.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Eius veritatis rem reprehenderit.
                             </p>
 
-                            <a href="#contact" class="button">
+                            <a href="#" class="service-button">
                                 Digital Plans
+                                <span>▶</span>
                             </a>
 
                         </div>
@@ -176,7 +175,7 @@
 
 
                     <!-- Marketing -->
-                    <article class="service-card">
+                    <article class="featured-service">
 
                         <img
                             src="images/marketing.jpg"
@@ -185,47 +184,48 @@
 
                         <div class="service-content">
 
-                            <h3>
-                                Marketing
-                            </h3>
+                            <h3>Marketing</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Eius veritatis temporibus
-                                maiores.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Eius veritatis rem reprehenderit.
                             </p>
 
-                            <a href="#contact" class="button">
+                            <a href="#" class="service-button">
                                 Marketing Plans
+                                <span>▶</span>
                             </a>
 
                         </div>
 
                     </article>
 
+                </div>
 
-                    <!-- Video Production -->
+
+                <!-- Smaller services -->
+                <div class="service-grid">
+
+                    <!-- Video -->
                     <article class="service-card">
 
                         <img
-                            src="images/video-production.jpg"
+                            src="images/video.jpg"
                             alt="Video Production"
                         >
 
-                        <div class="service-content">
+                        <div class="service-card-content">
 
-                            <h3>
-                                Video Production
-                            </h3>
+                            <h3>Video Production</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Eius veritatis temporibus
-                                maiores.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Eius veritatis rem reprehenderit.
                             </p>
 
-                            <a href="#contact" class="button">
+                            <a href="#" class="service-button">
                                 Video Plans
+                                <span>▶</span>
                             </a>
 
                         </div>
@@ -233,28 +233,26 @@
                     </article>
 
 
-                    <!-- Web Development -->
+                    <!-- Web -->
                     <article class="service-card">
 
                         <img
-                            src="images/web-development.jpg"
+                            src="images/web.jpg"
                             alt="Web Development"
                         >
 
-                        <div class="service-content">
+                        <div class="service-card-content">
 
-                            <h3>
-                                Web Development
-                            </h3>
+                            <h3>Web Development</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Eius veritatis temporibus
-                                maiores.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Eius veritatis rem reprehenderit.
                             </p>
 
-                            <a href="#contact" class="button">
+                            <a href="#" class="service-button">
                                 Web Plans
+                                <span>▶</span>
                             </a>
 
                         </div>
@@ -267,23 +265,21 @@
 
                         <img
                             src="images/print.jpg"
-                            alt="Print"
+                            alt="Print services"
                         >
 
-                        <div class="service-content">
+                        <div class="service-card-content">
 
-                            <h3>
-                                Print
-                            </h3>
+                            <h3>Print</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Eius veritatis temporibus
-                                maiores.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Eius veritatis rem reprehenderit.
                             </p>
 
-                            <a href="#contact" class="button">
+                            <a href="#" class="service-button">
                                 Print Plans
+                                <span>▶</span>
                             </a>
 
                         </div>
@@ -297,60 +293,33 @@
         </section>
 
 
-        <!-- Team -->
+        <!-- ================= TEAM ================= -->
         <section id="team" class="team">
 
             <div class="container">
 
-                <!-- Vision -->
-                <div class="vision">
-
-                    <h2>
-                        Our Vision
-                    </h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatem delectus nulla, accusantium rerum esse
-                        temporibus necessitatibus.
-                    </p>
-
-                    <a href="#about" class="button">
-                        Learn More
-                    </a>
-
-                </div>
-
-
-                <h2>
-                    Our Team
-                </h2>
-
+                <h2>Our Team</h2>
 
                 <div class="team-grid">
 
-                    <!-- Bob Rite -->
+                    <!-- Bob -->
                     <article class="team-member">
 
                         <img
-                            src="images/bob-rite.jpg"
+                            src="images/bob.jpg"
                             alt="Bob Rite"
                         >
 
-                        <div class="team-member-content">
+                        <div class="team-info">
 
-                            <h3>
-                                Bob Rite
-                            </h3>
+                            <h3>Bob Rite</h3>
 
-                            <p class="role">
-                                CEO and Co-owner
-                            </p>
+                            <h4>CEO &amp; Co-owner</h4>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi aspernatur
-                                reprehenderit earum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Animi aspernatur ipsum earum reprehenderit
+                                accusamus.
                             </p>
 
                         </div>
@@ -358,28 +327,24 @@
                     </article>
 
 
-                    <!-- John Doe -->
+                    <!-- John -->
                     <article class="team-member">
 
                         <img
-                            src="images/john-doe.jpg"
+                            src="images/john.jpg"
                             alt="John Doe"
                         >
 
-                        <div class="team-member-content">
+                        <div class="team-info">
 
-                            <h3>
-                                John Doe
-                            </h3>
+                            <h3>John Doe</h3>
 
-                            <p class="role">
-                                CFO and Co-owner
-                            </p>
+                            <h4>CEO and Co-owner</h4>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi aspernatur
-                                reprehenderit earum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Animi aspernatur ipsum earum reprehenderit
+                                accusamus.
                             </p>
 
                         </div>
@@ -393,59 +358,103 @@
         </section>
 
 
-        <!-- Contact -->
+        <!-- ================= VISION ================= -->
+        <section class="vision">
+
+            <div class="container vision-container">
+
+                <img
+                    src="images/vision.jpg"
+                    alt="Our Vision"
+                >
+
+                <div class="vision-content">
+
+                    <h2>Our Vision</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eius veritatis rem reprehenderit. Curabitur sem consequat
+                        lorem ipsum.
+                    </p>
+
+                    <a href="#" class="vision-button">
+                        Learn More
+                        <span>▶</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
         <section id="contact" class="contact">
 
             <div class="container">
 
-                <h2>
-                    Contact Us
-                </h2>
+                <h2>Contact Us</h2>
 
                 <div class="contact-grid">
 
-                    <!-- Form -->
+                    <!-- Contact form -->
                     <div class="contact-form">
 
-                        <h3>
-                            Send us a message
-                        </h3>
+                        <h3>Send us a message</h3>
 
                         <form action="#" method="post">
 
-                            <label for="fullname">
-                                Full Name
-                            </label>
+                            <div class="form-group">
 
-                            <input
-                                type="text"
-                                id="fullname"
-                                name="fullname"
-                                required
+                                <label for="fullname">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullname"
+                                    name="fullname"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                ></textarea>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="submit-button"
                             >
-
-                            <label for="email">
-                                Email
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                required
-                            >
-
-                            <label for="message">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                required
-                            ></textarea>
-
-                            <button type="submit">
                                 Send
                             </button>
 
@@ -457,14 +466,17 @@
                     <!-- Location -->
                     <div class="location">
 
-                        <h3>
-                            Location
-                        </h3>
+                        <h3>Location</h3>
 
-                        <img
-                            src="images/map.jpg"
-                            alt="Location map"
-                        >
+                        <div class="map">
+
+                            <iframe
+                                src="https://www.google.com/maps?q=Algonquin%20College%20Ottawa&output=embed"
+                                title="Location map"
+                                loading="lazy">
+                            </iframe>
+
+                        </div>
 
                     </div>
 
@@ -474,9 +486,7 @@
                 <!-- Hours -->
                 <div class="hours">
 
-                    <h3>
-                        Hours of operation
-                    </h3>
+                    <h3>Hours of operation</h3>
 
                     <table>
 
@@ -514,27 +524,21 @@
     </main>
 
 
-    <!-- Footer -->
-    <footer>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
 
-        <div class="container">
+        <div class="container footer-inner">
 
-            <p>
-                © Copyright Three Star Media 2026
-            </p>
+            <div>
+                <p>&copy; Three Star Media 2026</p>
+                <p>All images are taken from Unsplash.</p>
+            </div>
 
-            <p>
-                All images are taken from Unsplash.
-            </p>
-
-            <a href="#home">
-                Back to top
-            </a>
+            <a href="#home">Back to top</a>
 
         </div>
 
     </footer>
 
 </body>
-
 </html>
