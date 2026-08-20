@@ -1,393 +1,626 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Three Star Media</title>
+    <title>Three Star Media</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header and main navigation -->
-    <header class="site-header">
-        <div class="container header-container">
-
-            <!-- Company logo -->
-            <a href="#home" class="logo">
-                <img src="images/logo.png" alt="Three Star Media logo">
-            </a>
-
-            <!-- Main navigation -->
-            <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-            <!-- Search form -->
-            <form class="search-form" action="#" method="get">
-                <label for="search" class="visually-hidden">Search</label>
-                <input type="search" id="search" name="search" placeholder="Search">
-                <button type="submit" aria-label="Search">⌕</button>
-            </form>
-
-        </div>
-    </header>
-
-    <main>
-
-        <!-- Hero / Home section -->
-        <section id="home" class="hero">
-            <div class="container hero-content">
-
-                <h1>Welcome to Three Star Media</h1>
-
-                <p>
-                    Three Star Media is a digital media company that helps
-                    businesses grow through creative and effective digital
-                    solutions.
-                </p>
-
-                <a href="#contact" class="button">
-                    Connect with us <span>▶</span>
-                </a>
-
-            </div>
-        </section>
-
-        <!-- About Us section -->
-        <section id="about" class="about">
-            <div class="container about-content">
-
-                <div class="about-image">
-                    <img
-                        src="images/about-us.jpg"
-                        alt="People working together in an office">
-                </div>
-
-                <div class="about-text">
-                    <h2>About Us</h2>
-
-                    <p>
-                        Three Star Media is a creative digital media company
-                        dedicated to helping businesses build their online
-                        presence.
-                    </p>
-
-                    <p>
-                        Our team combines design, technology and creative
-                        thinking to create solutions that connect businesses
-                        with their customers.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Services section -->
-        <section id="services" class="services">
-            <div class="container">
-
-                <h2>Our Services</h2>
-
-                <div class="service-grid">
-
-                    <!-- Digital Transformation service -->
-                    <article class="service-card">
-                        <img
-                            src="images/digital.jpg"
-                            alt="Digital transformation service">
-
-                        <div class="service-content">
-                            <h3>Digital Transformation</h3>
-
-                            <p>
-                                We help businesses improve their digital
-                                presence with modern and effective solutions.
-                            </p>
-
-                            <a href="#" class="button">
-                                Digital Plans <span>▶</span>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Marketing service -->
-                    <article class="service-card">
-                        <img
-                            src="images/marketing.jpg"
-                            alt="Marketing service">
-
-                        <div class="service-content">
-                            <h3>Marketing</h3>
-
-                            <p>
-                                Our marketing solutions help businesses reach
-                                their audience and build stronger connections.
-                            </p>
-
-                            <a href="#" class="button">
-                                Marketing Plans <span>▶</span>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Video Production service -->
-                    <article class="service-card">
-                        <img
-                            src="images/video.jpg"
-                            alt="Video production service">
-
-                        <div class="service-content">
-                            <h3>Video Production</h3>
-
-                            <p>
-                                We create engaging video content that
-                                communicates your message and captures
-                                attention.
-                            </p>
-
-                            <a href="#" class="button">
-                                Video Plans <span>▶</span>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Web Development service -->
-                    <article class="service-card">
-                        <img
-                            src="images/web.jpg"
-                            alt="Web development service">
-
-                        <div class="service-content">
-                            <h3>Web Development</h3>
-
-                            <p>
-                                We build responsive and user-friendly websites
-                                designed for modern businesses.
-                            </p>
-
-                            <a href="#" class="button">
-                                Web Plans <span>▶</span>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Print service -->
-                    <article class="service-card">
-                        <img
-                            src="images/print.jpg"
-                            alt="Print service">
-
-                        <div class="service-content">
-                            <h3>Print</h3>
-
-                            <p>
-                                We provide creative print solutions that help
-                                businesses communicate their brand.
-                            </p>
-
-                            <a href="#" class="button">
-                                Print Plans <span>▶</span>
-                            </a>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Vision section -->
-        <section class="vision">
-            <div class="container vision-content">
-
-                <div class="vision-image">
-                    <img
-                        src="images/vision.jpg"
-                        alt="People working on a digital project">
-                </div>
-
-                <div class="vision-text">
-                    <h2>Our Vision</h2>
-
-                    <p>
-                        Our vision is to help businesses succeed in a digital
-                        world by creating meaningful experiences through
-                        design, technology and creativity.
-                    </p>
-
-                    <a href="#contact" class="button">
-                        Learn More <span>▶</span>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Team section -->
-        <section id="team" class="team">
-            <div class="container">
-
-                <h2>Our Team</h2>
-
-                <div class="team-grid">
-
-                    <!-- First team member -->
-                    <article class="team-member">
-                        <img
-                            src="images/john.jpg"
-                            alt="John Doe">
-
-                        <div class="team-info">
-                            <h3>John Doe</h3>
-
-                            <p class="job-title">
-                                CEO and Founder
-                            </p>
-
-                            <p>
-                                John leads the company and works with clients
-                                to develop creative digital solutions.
-                            </p>
-                        </div>
-                    </article>
-
-                    <!-- Second team member -->
-                    <article class="team-member">
-                        <img
-                            src="images/bob.jpg"
-                            alt="Bob Rite">
-
-                        <div class="team-info">
-                            <h3>Bob Rite</h3>
-
-                            <p class="job-title">
-                                Creative Director
-                            </p>
-
-                            <p>
-                                Bob develops creative ideas and helps the team
-                                create engaging visual experiences.
-                            </p>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact section -->
-        <section id="contact" class="contact">
-            <div class="container">
-
-                <h2>Contact Us</h2>
-
-                <!-- Contact form -->
-                <div class="contact-form">
-                    <h3>Send us a message</h3>
-
-                    <form action="#" method="post">
-
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="5"></textarea>
-                        </div>
-
-                        <button type="submit" class="button">
-                            Send
-                        </button>
-
-                    </form>
-                </div>
-
-                <!-- Business information -->
-                <div class="business-info">
-
-                    <!-- Business hours -->
-                    <div class="hours">
-                        <h3>Hours of operation</h3>
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Hours</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>Monday - Friday</td>
-                                    <td>9:00 AM - 6:00 PM</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Saturday</td>
-                                    <td>10:00 AM - 4:00 PM</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Sunday</td>
-                                    <td>Closed</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- Business location -->
-                    <div class="location">
-                        <h3>Location</h3>
-
-                        <div class="map">
-                            <iframe
-                                src="https://www.google.com/maps?q=Algonquin%20College%20Ottawa&output=embed"
-                                title="Three Star Media location map"
-                                loading="lazy">
-                            </iframe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>
-                &copy; 2026 Three Star Media. All rights reserved.
-            </p>
-        </div>
-    </footer>
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <div class="container header-container">
+
+            <a href="#home" class="logo-link">
+
+                <img
+                    src="images/logo.png.png"
+                    alt="Three Star Media logo"
+                    class="logo"
+                >
+
+                <span>Three Star Media</span>
+
+            </a>
+
+            <nav aria-label="Main navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#team">Our Team</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================= -->
+
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <h1>
+                        Welcome to<br>
+                        Three Star Media
+                    </h1>
+
+                    <p>
+                        We create digital experiences that help
+                        businesses connect with their audience.
+                    </p>
+
+                    <a href="#contact" class="button">
+                        Connect with us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT US
+        ========================= -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <div class="about-content">
+
+                    <div class="about-image">
+
+                        <img
+                            src="images/about-us.jpg"
+                            alt="Three Star Media office"
+                        >
+
+                    </div>
+
+                    <div class="about-text">
+
+                        <h2>About Us</h2>
+
+                        <p>
+                            We are a creative digital media company
+                            that creates professional and engaging
+                            digital experiences for businesses and
+                            organizations.
+                        </p>
+
+                        <p>
+                            Our team combines design, technology and
+                            creativity to create solutions that help
+                            businesses communicate with their
+                            audiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVICES
+        ========================= -->
+
+        <section class="services" id="services">
+
+            <div class="container">
+
+                <h2>Our Services</h2>
+
+                <div class="service-grid">
+
+
+                    <!-- SERVICE 1 -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/web.jpg"
+                            alt="Web development"
+                        >
+
+                        <div class="service-content">
+
+                            <h3>Web Development</h3>
+
+                            <p>
+                                We create responsive and user-friendly
+                                websites that help businesses build a
+                                strong online presence.
+                            </p>
+
+                            <a href="#contact" class="button">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVICE 2 -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/marketing.jpg"
+                            alt="Digital marketing"
+                        >
+
+                        <div class="service-content">
+
+                            <h3>Digital Marketing</h3>
+
+                            <p>
+                                We develop creative digital marketing
+                                strategies that help businesses reach
+                                their customers.
+                            </p>
+
+                            <a href="#contact" class="button">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVICE 3 -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/video.jpg"
+                            alt="Video production"
+                        >
+
+                        <div class="service-content">
+
+                            <h3>Video Production</h3>
+
+                            <p>
+                                We create engaging video content that
+                                communicates your ideas and tells your
+                                story.
+                            </p>
+
+                            <a href="#contact" class="button">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVICE 4 -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/print.jpg"
+                            alt="Print design"
+                        >
+
+                        <div class="service-content">
+
+                            <h3>Print Design</h3>
+
+                            <p>
+                                We create professional print materials
+                                that represent your brand and ideas.
+                            </p>
+
+                            <a href="#contact" class="button">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVICE 5 -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/digital.jpg"
+                            alt="Creative design"
+                        >
+
+                        <div class="service-content">
+
+                            <h3>Creative Design</h3>
+
+                            <p>
+                                We create unique visual concepts that
+                                make your digital presence stand out.
+                            </p>
+
+                            <a href="#contact" class="button">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================= -->
+
+        <section class="projects" id="projects">
+
+            <div class="container">
+
+                <div class="project-content">
+
+                    <div class="project-text">
+
+                        <h2>Our Projects</h2>
+
+                        <h3>
+                            Creative Digital Experiences
+                        </h3>
+
+                        <p>
+                            Take a look at some of our creative
+                            digital projects. We combine visual
+                            design, technology and creativity to
+                            create engaging experiences.
+                        </p>
+
+                        <a href="#contact" class="button">
+                            Start a Project
+                        </a>
+
+                    </div>
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/web.jpg"
+                            alt="Responsive website project"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OUR VISION
+        ========================= -->
+
+        <section class="vision" id="vision">
+
+            <div class="container">
+
+                <div class="vision-content">
+
+                    <div class="vision-text">
+
+                        <h2>Our Vision</h2>
+
+                        <p>
+                            We believe in creating meaningful digital
+                            experiences that connect businesses with
+                            their audiences through creativity,
+                            technology and innovative ideas.
+                        </p>
+
+                        <a href="#contact" class="button">
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OUR TEAM
+        ========================= -->
+
+        <section class="team" id="team">
+
+            <div class="container">
+
+                <h2>Our Team</h2>
+
+                <div class="team-grid">
+
+
+                    <!-- BOB IMAGE -->
+
+                    <div class="team-image">
+
+                        <img
+                            src="images/bob.jpg"
+                            alt="Bob Rite"
+                        >
+
+                    </div>
+
+
+                    <!-- JOHN INFORMATION -->
+
+                    <div class="team-info">
+
+                        <h3>John Doe</h3>
+
+                        <h4>CEO and co-owner</h4>
+
+                        <p>
+                            John is a co-owner who focuses on
+                            business development and communication.
+                            He works with the team to create
+                            successful digital solutions.
+                        </p>
+
+                    </div>
+
+
+                    <!-- BOB INFORMATION -->
+
+                    <div class="team-info">
+
+                        <h3>Bob Rite</h3>
+
+                        <h4>CEO and co-owner</h4>
+
+                        <p>
+                            Bob is one of the co-owners of Three Star
+                            Media. He helps guide the creative
+                            direction of the company and works with
+                            clients to achieve their goals.
+                        </p>
+
+                    </div>
+
+
+                    <!-- JOHN IMAGE -->
+
+                    <div class="team-image">
+
+                        <img
+                            src="images/john.jpg"
+                            alt="John Doe"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+                <h2>Contact Us</h2>
+
+                <div class="contact-grid">
+
+
+                    <!-- CONTACT FORM -->
+
+                    <div class="contact-form">
+
+                        <h3>Send us a message</h3>
+
+                        <form>
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Full Name"
+                            >
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                            >
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Message"
+                            ></textarea>
+
+                            <button
+                                type="submit"
+                                class="button"
+                            >
+                                Send
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="location">
+
+                        <h3>Location</h3>
+
+                        <iframe
+                            src="https://www.google.com/maps?q=Algonquin+College+Ottawa&output=embed"
+                            loading="lazy"
+                            title="Algonquin College location"
+                        ></iframe>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     HOURS
+                ========================= -->
+
+                <div class="hours">
+
+                    <h3>Hours of operation</h3>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Three Star Media. All rights reserved.
+            </p>
+
+            <a href="#home">
+                Back to top
+            </a>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
