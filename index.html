@@ -1,5 +1,6 @@
  <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,82 +12,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Main stylesheet -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- Header -->
     <header class="site-header">
-
-        <div class="container header-inner">
+        <div class="container header-container">
 
             <a href="#home" class="logo">
-                <img src="images/logo.png" alt="Three Star Media">
+                <img src="images/logo.png" alt="Three Star Media logo">
             </a>
 
-            <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                    <li>
-                        <a href="#home" class="active">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#about">About Us</a>
-                    </li>
-
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-
-                    <li>
-                        <a href="#team">Team</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#team">Our Team</a>
+                <a href="#contact">Contact</a>
             </nav>
 
             <form class="search-form" action="#" method="get">
-                <label for="search">Search</label>
-                <input type="search" id="search" name="search">
-                <button type="submit" aria-label="Search">⌕</button>
+                <label for="search" class="visually-hidden">Search</label>
+                <input type="search" id="search" name="search" placeholder="Search">
+                <button type="submit">Search</button>
             </form>
 
         </div>
-
     </header>
 
 
     <main>
 
-        <!-- ================= HERO ================= -->
+        <!-- Hero -->
         <section id="home" class="hero">
 
             <div class="container hero-container">
 
-                <img
-                    class="hero-image"
-                    src="images/main-banner.jpg"
-                    alt="Three Star Media workspace"
-                >
-
-                <div class="hero-overlay">
-
+                <div class="hero-content">
                     <h1>Welcome to Three Star Media</h1>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni rerum voluptas nesciunt quam nostrum similique.
+                        We help businesses grow with creative digital solutions,
+                        professional design, marketing and media services.
                     </p>
 
                     <a href="#contact" class="button">
                         Connect with us
-                        <span>▶</span>
                     </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Us -->
+        <section id="about" class="about section">
+
+            <div class="container">
+
+                <h2>About Us</h2>
+
+                <div class="about-grid">
+
+                    <div class="about-image">
+                        <img src="images/about-us.jpg"
+                             alt="Three Star Media team working together">
+                    </div>
+
+                    <div class="about-content">
+
+                        <p>
+                            Three Star Media is a creative media company that helps
+                            businesses build strong digital experiences and connect
+                            with their customers.
+                        </p>
+
+                        <p>
+                            Our team combines creativity, technology and marketing
+                            to create effective solutions that help businesses grow.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -95,78 +105,33 @@
         </section>
 
 
-        <!-- ================= ABOUT ================= -->
-        <section id="about" class="about">
-
-            <div class="container about-grid">
-
-                <div class="about-image">
-                    <img
-                        src="images/about-us.jpg"
-                        alt="About Three Star Media"
-                    >
-                </div>
-
-                <div class="about-content">
-
-                    <h2>About Us</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde repellendus exercitationem asperiores corporis
-                        ducimus. Maxime soluta temporibus exercitationem sapiente
-                        reprehenderit.
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Possimus reprehenderit quam saepe praesentium laboriosam
-                        perferendis amet.
-                    </p>
-
-                    <p>
-                        Atque accusamus consectetur sunt eligendi soluta ut
-                        consequatur quidem non perferendis.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SERVICES ================= -->
-        <section id="services" class="services">
+        <!-- Services -->
+        <section id="services" class="services section">
 
             <div class="container">
 
                 <h2>Our Services</h2>
 
+                <div class="services-grid">
 
-                <!-- Large services -->
-                <div class="featured-services">
 
                     <!-- Digital Transformation -->
-                    <article class="featured-service">
+                    <article class="service-card">
 
-                        <img
-                            src="images/digital.jpg"
-                            alt="Digital Transformation"
-                        >
+                        <img src="images/digital.jpg"
+                             alt="Digital transformation">
 
                         <div class="service-content">
 
                             <h3>Digital Transformation</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Eius veritatis rem reprehenderit.
+                                We help businesses improve their digital presence
+                                and use technology to work more effectively.
                             </p>
 
-                            <a href="#" class="service-button">
+                            <a href="#contact" class="button">
                                 Digital Plans
-                                <span>▶</span>
                             </a>
 
                         </div>
@@ -175,57 +140,46 @@
 
 
                     <!-- Marketing -->
-                    <article class="featured-service">
+                    <article class="service-card">
 
-                        <img
-                            src="images/marketing.jpg"
-                            alt="Marketing"
-                        >
+                        <img src="images/marketing.jpg"
+                             alt="Marketing">
 
                         <div class="service-content">
 
                             <h3>Marketing</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Eius veritatis rem reprehenderit.
+                                Our marketing solutions help businesses reach
+                                their audience and build stronger relationships.
                             </p>
 
-                            <a href="#" class="service-button">
+                            <a href="#contact" class="button">
                                 Marketing Plans
-                                <span>▶</span>
                             </a>
 
                         </div>
 
                     </article>
 
-                </div>
 
-
-                <!-- Smaller services -->
-                <div class="service-grid">
-
-                    <!-- Video -->
+                    <!-- Video Production -->
                     <article class="service-card">
 
-                        <img
-                            src="images/video.jpg"
-                            alt="Video Production"
-                        >
+                        <img src="images/video.jpg"
+                             alt="Video production">
 
-                        <div class="service-card-content">
+                        <div class="service-content">
 
                             <h3>Video Production</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Eius veritatis rem reprehenderit.
+                                We create professional video content that tells
+                                your story and engages your audience.
                             </p>
 
-                            <a href="#" class="service-button">
+                            <a href="#contact" class="button">
                                 Video Plans
-                                <span>▶</span>
                             </a>
 
                         </div>
@@ -233,26 +187,23 @@
                     </article>
 
 
-                    <!-- Web -->
+                    <!-- Web Development -->
                     <article class="service-card">
 
-                        <img
-                            src="images/web.jpg"
-                            alt="Web Development"
-                        >
+                        <img src="images/web.jpg"
+                             alt="Web development">
 
-                        <div class="service-card-content">
+                        <div class="service-content">
 
                             <h3>Web Development</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Eius veritatis rem reprehenderit.
+                                We design and develop responsive websites that
+                                are easy to use and meet your business needs.
                             </p>
 
-                            <a href="#" class="service-button">
+                            <a href="#contact" class="button">
                                 Web Plans
-                                <span>▶</span>
                             </a>
 
                         </div>
@@ -263,23 +214,44 @@
                     <!-- Print -->
                     <article class="service-card">
 
-                        <img
-                            src="images/print.jpg"
-                            alt="Print services"
-                        >
+                        <img src="images/print.jpg"
+                             alt="Print design">
 
-                        <div class="service-card-content">
+                        <div class="service-content">
 
                             <h3>Print</h3>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Eius veritatis rem reprehenderit.
+                                We create professional print materials that help
+                                businesses communicate their brand effectively.
                             </p>
 
-                            <a href="#" class="service-button">
+                            <a href="#contact" class="button">
                                 Print Plans
-                                <span>▶</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Vision -->
+                    <article class="service-card">
+
+                        <img src="images/vision.jpg"
+                             alt="Our creative vision">
+
+                        <div class="service-content">
+
+                            <h3>Our Vision</h3>
+
+                            <p>
+                                Our vision is to combine creativity and technology
+                                to create meaningful experiences for our clients.
+                            </p>
+
+                            <a href="#contact" class="button">
+                                Learn More
                             </a>
 
                         </div>
@@ -293,8 +265,8 @@
         </section>
 
 
-        <!-- ================= TEAM ================= -->
-        <section id="team" class="team">
+        <!-- Team -->
+        <section id="team" class="team section">
 
             <div class="container">
 
@@ -302,49 +274,48 @@
 
                 <div class="team-grid">
 
-                    <!-- Bob -->
-                    <article class="team-member">
-
-                        <img
-                            src="images/bob.jpg"
-                            alt="Bob Rite"
-                        >
-
-                        <div class="team-info">
-
-                            <h3>Bob Rite</h3>
-
-                            <h4>CEO &amp; Co-owner</h4>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Animi aspernatur ipsum earum reprehenderit
-                                accusamus.
-                            </p>
-
-                        </div>
-
-                    </article>
-
 
                     <!-- John -->
                     <article class="team-member">
 
-                        <img
-                            src="images/john.jpg"
-                            alt="John Doe"
-                        >
+                        <img src="images/john.jpg"
+                             alt="John Doe">
 
-                        <div class="team-info">
+                        <div class="team-content">
 
                             <h3>John Doe</h3>
 
-                            <h4>CEO and Co-owner</h4>
+                            <p class="team-role">
+                                CEO and Creative Director
+                            </p>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Animi aspernatur ipsum earum reprehenderit
-                                accusamus.
+                                John leads our creative team and works with clients
+                                to develop strong visual identities and strategies.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Bob -->
+                    <article class="team-member">
+
+                        <img src="images/bob.jpg"
+                             alt="Bob Rite">
+
+                        <div class="team-content">
+
+                            <h3>Bob Rite</h3>
+
+                            <p class="team-role">
+                                Web Developer
+                            </p>
+
+                            <p>
+                                Bob develops responsive websites and digital
+                                experiences that are simple and user friendly.
                             </p>
 
                         </div>
@@ -358,40 +329,8 @@
         </section>
 
 
-        <!-- ================= VISION ================= -->
-        <section class="vision">
-
-            <div class="container vision-container">
-
-                <img
-                    src="images/vision.jpg"
-                    alt="Our Vision"
-                >
-
-                <div class="vision-content">
-
-                    <h2>Our Vision</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius veritatis rem reprehenderit. Curabitur sem consequat
-                        lorem ipsum.
-                    </p>
-
-                    <a href="#" class="vision-button">
-                        Learn More
-                        <span>▶</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-        <section id="contact" class="contact">
+        <!-- Contact -->
+        <section id="contact" class="contact section">
 
             <div class="container">
 
@@ -399,7 +338,8 @@
 
                 <div class="contact-grid">
 
-                    <!-- Contact form -->
+
+                    <!-- Contact Form -->
                     <div class="contact-form">
 
                         <h3>Send us a message</h3>
@@ -408,15 +348,14 @@
 
                             <div class="form-group">
 
-                                <label for="fullname">
-                                    Full Name
+                                <label for="name">
+                                    Name
                                 </label>
 
-                                <input
-                                    type="text"
-                                    id="fullname"
-                                    name="fullname"
-                                >
+                                <input type="text"
+                                       id="name"
+                                       name="name"
+                                       required>
 
                             </div>
 
@@ -427,11 +366,10 @@
                                     Email
                                 </label>
 
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                >
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       required>
 
                             </div>
 
@@ -442,23 +380,57 @@
                                     Message
                                 </label>
 
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="6"
-                                ></textarea>
+                                <textarea id="message"
+                                          name="message"
+                                          rows="6"
+                                          required></textarea>
 
                             </div>
 
 
-                            <button
-                                type="submit"
-                                class="submit-button"
-                            >
+                            <button type="submit" class="button">
                                 Send
                             </button>
 
                         </form>
+
+                    </div>
+
+
+                    <!-- Hours -->
+                    <div class="hours">
+
+                        <h3>Hours of operation</h3>
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9:00 am - 5:00 pm</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>10:00 am - 3:00 pm</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
 
                     </div>
 
@@ -469,51 +441,14 @@
                         <h3>Location</h3>
 
                         <div class="map">
-
                             <iframe
-                                src="https://www.google.com/maps?q=Algonquin%20College%20Ottawa&output=embed"
-                                title="Location map"
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=-75.72%2C45.39%2C-75.65%2C45.44&layer=mapnik"
+                                title="Map showing Ottawa location"
                                 loading="lazy">
                             </iframe>
-
                         </div>
 
                     </div>
-
-                </div>
-
-
-                <!-- Hours -->
-                <div class="hours">
-
-                    <h3>Hours of operation</h3>
-
-                    <table>
-
-                        <thead>
-
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>
-
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
 
                 </div>
 
@@ -524,21 +459,25 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="site-footer">
+    <!-- Footer -->
+    <footer class="footer">
 
-        <div class="container footer-inner">
+        <div class="container footer-container">
 
-            <div>
-                <p>&copy; Three Star Media 2026</p>
-                <p>All images are taken from Unsplash.</p>
+            <p>
+                &copy; 2026 Three Star Media
+            </p>
+
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
             </div>
-
-            <a href="#home">Back to top</a>
 
         </div>
 
     </footer>
 
 </body>
+
 </html>
